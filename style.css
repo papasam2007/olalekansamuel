@@ -1,0 +1,352 @@
+:root{
+    --primarycolor: #0c090a;
+    --color: #fff;
+}
+body {
+    font: 15px/1.5 Arial, Helvetica,sans-serif;
+    padding: 0;
+    margin: 0;
+    background-color: var(--primarycolor)
+}
+
+.parent {
+    background-image: linear-gradient(rgb(94, 94, 141), rgb(201, 127, 158));
+    /* background-color: black; */
+    padding: 3rem;
+    height: fit-content;
+}
+
+.mainname {
+    color: rgb(2, 0, 9);
+}
+
+.nav {
+    width: 100%;
+    display: flex;
+    flex: auto;
+    align-items: center;
+     justify-content: space-between;
+}
+.logo{
+    color:#fff
+}
+.highlight {
+    color: rgb(2, 0, 9);
+}
+ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 35%;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 4rem;
+    
+}
+
+.test{
+    height: 3rem;
+    width: 3rem;
+    position: absolute;
+    top: 0;
+    left:0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    transform: rotate(-10deg);
+    
+    border-radius: 1.5rem;
+    background-color: rgb(99, 61, 233);
+}
+
+
+.current a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.introduction { 
+    
+    display: flex;
+    align-self: center;
+    flex-direction: column;
+    color: #fff;
+    width: 50%;
+}
+
+.my_name {
+    color: var(--color);
+    font-weight: bolder;
+    color: #4e4e4e; 
+    word-spacing: 0.5rem;
+    letter-spacing: 0.5rem;
+    flex-direction: column;
+}
+
+.name {
+    font-size: 2rem;
+}
+
+.description {
+    width: 90%;
+    line-height: 2rem;
+    color: #a1a0a0;
+}
+
+.introduction_image {
+    width: 30%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    margin-left: auto;
+    height: 70vh
+
+}
+
+.hero_Image{
+    width: 100%;
+    display: block;
+    border-radius: 1.5rem;
+    margin: auto ;
+    height: 100%;
+    z-index: 1;
+}
+
+.services {
+    margin-top: 10%;
+    margin-left: 40%;
+    font-weight: lighter;
+    font-size: x-small;
+    display: flex;
+}
+
+.my_services {
+    font-weight: bolder;
+    color: #4e4e4e;  
+    letter-spacing: 0.5rem;
+    flex-direction: column;
+}
+
+.Specialised {
+    color: rgb(241, 237, 237);
+    margin-top: auto;
+}
+
+.box_container {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: auto;
+}
+
+.box {
+    background-color: rgb(216, 222, 231);
+     height: 15rem;
+     text-align: center;
+   align-items: center;
+     justify-items: center;
+    line-height: 0.875rem;
+    width: 20rem;
+    border-radius: 1rem;
+    padding-top: 5%;
+    padding-left: 2%;
+    padding-right: 2%;
+    margin: 0 auto; 
+}
+
+.in_box {
+    font-size: 1.5rem;
+    font-weight: bolder;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-decoration: solid;
+    text-shadow: none;
+}
+
+/* .hold_image {
+    height: 3rem;
+    width: 3rem;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: rgb(216, 222, 231);
+    margin: 0 auto;
+} */
+
+.scroll {
+    color: #fff;
+}
+
+.work {
+    color: rgb(241, 237, 237);
+    margin-top: 20%;
+    font-weight: lighter;
+    font-size: 0.5rem;
+    color: #4e4e4e;  
+    letter-spacing: 0.5rem;
+    flex-direction: column;
+}
+
+.work_portfolio {
+    font-size: 1.5rem;
+    color: #171a20;
+}
+
+.work_image {
+    display: block;
+    
+}
+
+.portfolio {
+    font-size: 1.5rem;
+    color: #171a20;
+    text-align: center;
+    letter-spacing: 0.5rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.more_designs {
+    display: flex;
+    justify-content: flex-end ;
+    margin-top: 1rem;
+    text-align: right;
+    text-decoration: none;
+    color: rgb(99, 61, 233)
+}
+
+.workImageContainer{
+    width: 100%;
+    padding-left: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 1rem ;
+}
+.workImage{
+    margin: 0;
+    width: 100%;
+}
+
+.harmburger div{
+    background-color: #0c090a;
+    height: .2rem;
+}
+
+#harmburger {
+    /* background-color: #000; */
+    height: 30px;
+    width: 40px;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    margin-bottom: 2rem;
+    display: none;
+}
+
+.dropdown {
+    display: none;
+}
+
+
+@media screen and (max-width: 700px)
+ {
+   #harmburger {
+    display: block;}
+    html {
+        overflow-x: hidden;
+    }
+
+    ul {
+       display: none;
+    }
+    
+    li {
+        display: none;
+    }
+
+    
+.dropdown {
+    position: absolute;
+    display: inline-block;
+}
+
+.dropbtn {
+    background-color: #060606;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    margin-left: 30rem;
+    border: none;
+    cursor: pointer;
+  }
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 10;
+  }
+
+  .dropdown-content {
+    right: 0;
+  }
+
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  .workImageContainer{
+    width: 100%;
+    padding-left: 8rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 1rem ;
+}
+.workImage{
+    margin: 0;
+    width: 50%;
+}
+  
+.box {
+    background-color: rgb(216, 222, 231);
+     height: 15rem;
+     text-align: center;
+   align-items: center;
+     justify-items: center;
+    line-height: 1rem;
+    width: 8rem;
+    border-radius: 1rem;
+    padding-top: 5%;
+    padding-left: 2%;
+    padding-right: 2%;
+    margin: 0 auto; 
+}
+
+.introduction_image {
+    width: 30%;
+    display: grid;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    margin-left: auto;
+    height: 30vh
+
+}
+}
